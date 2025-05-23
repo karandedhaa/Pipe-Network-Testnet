@@ -1,12 +1,11 @@
 ## 💻 System Requirements
-----------------------------------
 | Resource     | Requirement   |
 |--------------|---------------|
 | CPU          | 4 Cores       |
 | RAM          | 16 GB         |
 | Storage      | 25 GB SSD     |
 | Internet     | 1 Gbps        |
-> 💡 **Note**  
+> [!NOTE]
 > Only those who have been invited via email are able to join this testnet.
 ## 📥 Installation
 ### 1. Update Packages & Install Dependencies
@@ -33,7 +32,9 @@ EOL'
 
 sudo sysctl -p /etc/sysctl.d/99-popcache.conf
 ```
-```sudo sysctl -p /etc/sysctl.d/99-popcache.conf```
+```
+sudo sysctl -p /etc/sysctl.d/99-popcache.conf
+```
 ### 3. Increase File Limits:
 ```
 sudo bash -c 'cat > /etc/security/limits.d/popcache.conf << EOL
@@ -76,7 +77,7 @@ nano config.json
 5. **Identity configuration**:
    - All fields under `identity_config` are important for proper attribution
    - The `solana_pubkey` field is required for receiving rewards
-> **Note:**
+> [!NOTE]
 > Remember to replace your real data for the remaining data.
 ### 7. Create a Systemd Service:
 ```
@@ -116,14 +117,26 @@ sudo systemctl start popcache
 - Check if node is running:
 ```sudo systemctl status popcache```
 ![image](https://github.com/user-attachments/assets/49e31cb5-f57a-43c2-8f01-a8dd8775160b)
+
 - Verify if your node is listening on ports 440 and 80:
-```ss -tulpn | grep -E ':80|:443'```
+```
+ss -tulpn | grep -E ':80|:443'
+```
+
 - Monitoring the POP Cache Node:
 Use the following cmd to use the following command to display your Node ID and other information.
-```curl -sk https://localhost/state && echo -e "\n"```
-Use the following cmd to check health of your node
-```curl -sk https://localhost/health && echo -e "\n"```
+```
+curl -sk https://localhost/state && echo -e "\n"
+```
+
+- Use the following cmd to check health of your node
+```
+curl -sk https://localhost/health && echo -e "\n"
+```
+
 - Use [this dashboard](https://dashboard.testnet.pipe.network/node/xxxx) to view more information about your node.
-> **Note:**
-> Replace `xxxx` in the URL with your `node-id`.
+
+> [!NOTE]
+> Remember to replace your real data for the remaining data.
+
 ![image](https://github.com/user-attachments/assets/0509c592-67ed-4ef1-abc5-400878746975)
