@@ -9,7 +9,6 @@
 > 💡 **Note**  
 > Only those who have been invited via email are able to join this testnet.
 ## 📥 Installation
-----------------------------------
 ### 1. Update Packages & Install Dependencies
 ```sudo apt update && sudo apt install libssl-dev ca-certificates -y```
 - Make sure port 443 and 80 are open:
@@ -77,7 +76,7 @@ nano config.json
 5. **Identity configuration**:
    - All fields under `identity_config` are important for proper attribution
    - The `solana_pubkey` field is required for receiving rewards
-> **Note**
+> **Note:**
 > Remember to replace your real data for the remaining data.
 ### 7. Create a Systemd Service:
 ```
@@ -113,8 +112,7 @@ sudo systemctl enable popcache
 sudo systemctl daemon-reload
 sudo systemctl start popcache
 ```
--------------------------------------------
-### 🧩 Post-Installation:
+## 🧩 Post-Installation:
 - Check if node is running:
 ```sudo systemctl status popcache```
 ![image](https://github.com/user-attachments/assets/49e31cb5-f57a-43c2-8f01-a8dd8775160b)
@@ -126,6 +124,6 @@ Use the following cmd to use the following command to display your Node ID and o
 Use the following cmd to check health of your node
 ```curl -sk https://localhost/health && echo -e "\n"```
 - Use [this dashboard](https://dashboard.testnet.pipe.network/node/xxxx) to view more information about your node.
-> **Note**
+> **Note:**
 > Replace `xxxx` in the URL with your `node-id`.
 ![image](https://github.com/user-attachments/assets/0509c592-67ed-4ef1-abc5-400878746975)
