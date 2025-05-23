@@ -9,7 +9,9 @@
 > Only those who have been invited via email are able to join this testnet.
 ## 📥 Installation
 ### 1. Update Packages & Install Dependencies
-```sudo apt update && sudo apt install libssl-dev ca-certificates -y```
+```
+sudo apt update && sudo apt install libssl-dev ca-certificates -y
+```
 - Make sure port 443 and 80 are open:
 ```
 sudo ufw allow 443/tcp
