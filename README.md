@@ -53,7 +53,7 @@ cd /opt/popcache
 ```
 sudo wget -P /opt/popcache https://download.pipe.network/static/pop-v0.3.0-linux-x64.tar.gz
 sudo tar -xzf pop-v0.3.0-linux-*.tar.gz
-chmod 755 /opt/popcache/pop
+sudo chmod 755 /opt/popcache/pop
 ```
 ### 6. Open & Edit Config File:
 ```
