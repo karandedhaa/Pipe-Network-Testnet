@@ -115,7 +115,7 @@ sudo systemctl enable popcache
 sudo systemctl daemon-reload
 sudo systemctl start popcache
 ```
-## 🧩 Post-Installation:
+## 🧩 Post-Installation
 - Check if node is running:
 ```sudo systemctl status popcache```
 ![image](https://github.com/user-attachments/assets/49e31cb5-f57a-43c2-8f01-a8dd8775160b)
