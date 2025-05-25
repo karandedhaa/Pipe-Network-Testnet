@@ -57,7 +57,7 @@ sudo chmod 755 /opt/popcache/pop
 ```
 ### 6. Open & Edit Config File:
 ```
-nano config.json
+sudo nano config.json
 ```
 - Paste the following code in the file
 ```
