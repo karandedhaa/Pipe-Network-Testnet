@@ -59,6 +59,41 @@ sudo chmod 755 /opt/popcache/pop
 ```
 nano config.json
 ```
+- Paste the following code in the file
+```
+{
+  "pop_name": "your-pop-name",
+  "pop_location": "Your Location, Country",
+  "invite_code": "your-invite-code",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 443,
+    "http_port": 80,
+    "workers": 40
+  },
+  "cache_config": {
+    "memory_cache_size_mb": 4096,
+    "disk_cache_path": "./cache",
+    "disk_cache_size_gb": 100,
+    "default_ttl_seconds": 86400,
+    "respect_origin_headers": true,
+    "max_cacheable_size_mb": 1024
+  },
+  "api_endpoints": {
+    "base_url": "https://dataplane.pipenetwork.com"
+  },
+  "identity_config": {
+    "node_name": "your-node-name",
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "website": "https://your-website.com",
+    "twitter": "your_twitter_handle",
+    "discord": "your_discord_username",
+    "telegram": "your_telegram_handle",
+    "solana_pubkey": "YOUR_SOLANA_WALLET_ADDRESS_FOR_REWARDS"
+  }
+}
+```
 #### Configuration tips:
 1. **Memory settings**:
    - Set `memory_cache_size_mb` based on your available RAM (50-70% of total RAM is a good starting point)
