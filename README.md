@@ -94,6 +94,7 @@ nano config.json
   }
 }
 ```
+- Once all necessary adjustments have been made, hit `ctrl+x` `y` `enter`
 #### Configuration tips:
 1. **Memory settings**:
    - Set `memory_cache_size_mb` based on your available RAM (50-70% of total RAM is a good starting point)
