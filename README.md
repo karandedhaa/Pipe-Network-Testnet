@@ -51,7 +51,7 @@ cd /opt/popcache
 ```
 ### 5. Download and Extract the Binary Files:
 ```
-sudo wget -P /opt/popcache https://download.pipe.network/static/pop-v0.3.0-linux-x64.tar.gz
+sudo wget -P /opt/popcache https://download.pipe.network/static/pop-v0.3.2-linux-x64.tar.gz
 sudo tar -xzf pop-v0.3.0-linux-*.tar.gz
 sudo chmod 755 /opt/popcache/pop
 ```
